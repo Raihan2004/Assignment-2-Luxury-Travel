@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+/* Shareing styles */
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.common-section-content {
+    text-align: center;
+}
+
+.common-section-title {
+    color: #131318; 
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+
+.common-section-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 1.4rem;
+}
+/* Navber section styles */
+header{
+    max-width: 1170px;
+    margin: 50px auto 100px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+   
+}
+.logo h2{
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: 800;
+}
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul li {
+    list-style: none;
+    margin-left: 40px;
+}
+nav>ul li a{
+    text-decoration: none;
+    color: #424247;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.disable{
+    display: none;
+}
+.travel{
+    color: #FF5400;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.home{
+    color: #FF5400;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+/* Banner section style */
+.Banner{
+    height: 600px;
+    margin-top: 2rem;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url('../images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+     
+}
+.banner-contant{
+    margin: 0 auto;
+    max-width: 690px;
+    text-align: center;
+}
+.banner-title{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 6.9rem;
+    padding-bottom: 1rem;
+}
+.banner-description{
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+.form{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+}
+.form input, .form select, .form button{
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--secondary);
+    border: none;
+    width: 170px;
+}
+.form button{
+    border-radius: 8px;
+    background: #FF5400;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+main{
+    max-width: 1170px;
+    margin: 50px auto 100px;
+}
+/* popular Tours section */
+.popular{
+    margin: 5rem auto;
+    gap: 3.2rem;
+    margin-bottom: 0;
+}
+.popular-tours{
+    text-align: left;
+    width: calc((100% - 3.2rem)/2);
+}
+.popular-title{
+    padding-bottom: 1.5rem;
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.popular-sub-title, .list-item{
+    padding-bottom: 1rem;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.popular-tours-img{
+    width: 50%;
+}
+.popular-tours-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.btn-1{
+    width: 170px;
+    height: 50px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* Choose Section  */
+.destination-content{
+    text-align: center;
+}
+.destination-title{
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+.destination-description{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 1.4rem;
+}
+.destination-place-img-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.4rem;
+}
+.destination-place-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.destination-maldives{
+    grid-column: 1/7;
+    position: relative;
+}
+.destination-indonesias{
+    grid-column: 7/13;
+    position: relative;
+}
+.destination-srilanka{
+    grid-column: 1/4;
+    position: relative;
+}
+.destination-north-America{
+    grid-column: 4/10;
+    position: relative;
+}
+.destination-Kashmir{
+    grid-column: 10/13;
+    position: relative;
+}
+.destination-bangladesh{
+    grid-column: 1/6;
+    position: relative;
+}
+.destination-bandarban{
+    grid-column: 6/13;
+    position: relative;
+}
+.img-title{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+/* Why choice us section */
+.choice-container {
+   
+    margin-top: 6rem;
+}
+.first-container,
+.second-container{
+    max-width: 630px;
+    max-height: 280px;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.hotel-container{
+    gap: 1.5rem;
+  } 
+  .first-container {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.second-container  {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.third-container{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 630px;
+    max-height: 280px;
+    border-radius: 1rem;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin-top: 1rem;
+}
+.hotel-title{
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 800;
+    padding-left: 1rem;
+}
+.hotel-description{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+/* More traveling section styles */
+.travel-section{
+    max-width: 1170px;
+    margin: 50px auto 100px;
+}
+.grid-container{
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.travel-container{
+    background-color: #e6e9eb;
+    padding: 15px;
+    border-radius: 5px;
+}
+.travel-container img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.heading-icon{
+    justify-content: space-between;
+    align-items: center;
+}
+.plane{
+    background-color: #e893cf;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+/* Newsletter section styles */
+.newsletter{
+    gap: 2rem;
+    margin-top: 6rem;
+}
+.newsletter-subscribe{
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #FF5400;
+    width: 40%;
+}
+.newsletter-subscribe input{
+    display: block;
+    width: 390px;
+    height: 50px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    border-radius: 8px;
+    padding: 1rem;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+.news-title{
+    color: #131318;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: .2rem;
+}
+.news-description{
+    color: #5A5A5D;
+    width: 300px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+hr {
+    background: rgba(19, 19, 24, 0.10);
+}
+.Subscribe{
+    width: 390px;
+    height: 50px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0;
+}
+.News-img-container{
+    position: relative;
+}
+.News-img-container img{
+    border-radius: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+.discount{
+    width: 40%;
+    border-radius: 1rem;
+    transform: rotate(-20.62deg);
+    background-color: #FF5400;
+    position: absolute;
+    top: 56%;
+    left: 59%;
+    text-align: center;
+}
+.discount h1{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.discount h5{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 200;
+}
+/* Footer section start */
+.footer{
+    display: flex;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.25rem;
+}
+.footer-icon-img {
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.icons{
+    padding-top: 1.6rem;
+    padding-bottom: 1.7rem;
+}
+.icons a{
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+.copyrights{
+    margin-top: 2rem;
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .unorder-list{
+        display: none;
+    }
+    .disable{
+        display: block;
+    }
+    .menu-icon{
+        margin-right: 50px;
+    }
+    .logo{
+        width: 40%;
+    }
+    .logo h2{
+        font-size: 1.5rem;
+    }
+    .logo img{
+        width: 100%;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+    .popular{
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+.form input, .form select, .form button{
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--secondary);
+    border: none;
+    width: 100%;
+}
+
+
+    .popular-tours,
+    .popular-tours-img,
+    .Banner,
+    .destination-section,
+    .choice-container,
+    .first-container,
+    .second-container,
+    .newsletter-subscribe,
+    .News-img-container
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .banner-title{
+        padding-top: .5rem;
+    }
+
+    .form,
+    .tour,
+    .newsletter,
+    .watch-section {
+        flex-direction: column;
+    }
+    .destination-place-img-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .destination-place-img-container img
+    {
+        width: 100%;
+    }
+    .hotel-container{
+        gap: 0;
+    }
+    .first-container,
+    .third-container,
+    .third-container{
+        width: 90%;
+        margin-bottom: .8rem;
+    }
+    .newsletter{
+        margin-top:1rem ;
+    }
+    .newsletter-subscribe input, 
+    .newsletter-subscribe button{
+        width: 100%;
+    }
+    .News-img-container img{
+        width: 100%;
+    }
+    .discount{
+        top: 55%;
+        left: 49%;
+        bottom: 14%;
+        transform: rotate(-20.62deg);
+    }
+    .discount{
+        width: 50%;
+    }
+    .discount h1{
+        color: #FFF;
+        font-size: .9rem;
+        font-weight: 800;
+        padding-bottom: .5rem;
+    }
+    .discount h5{
+        color: #FFF;
+        font-size: .5rem;
+        font-weight: 200;
+    }
+
+
+
+    .footer,
+    .choice-container
+    {
+        margin-top: 1rem;
+    }
+    .footer-icon-img{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon-img{
+        width: 48px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    
+
+
+}
